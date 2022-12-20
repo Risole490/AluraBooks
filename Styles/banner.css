@@ -33,3 +33,15 @@
     background: url("/Imagens/Lupa.svg") no-repeat;
     background-position: 3em;
 }
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        margin-top: 1.5em;
+        font-size: 36px;
+    }
+
+    .banner__pesquisa {
+        width: 50%;
+        margin: 1.5em 0 2em 0;
+    }
+}
