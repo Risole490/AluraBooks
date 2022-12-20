@@ -34,3 +34,30 @@
     text-align: center;
 }
 
+@media screen and (min-width:1024px) {
+    .contato {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__email {
+        width: 290px;
+        height: 15px;
+        padding: 1em 0.5em;
+    }
+
+    .container-contato {
+        width: 30%;
+        margin: 1em 0.5em;
+    }
+
+    .contato__email::placeholder {
+        background-position: 2em;
+        text-align: center;
+    }
+}
