@@ -83,6 +83,9 @@
                 <div class="swiper-slide"><img src="/Imagens/MetricasAgeis.svg" alt="Livro sobre metricas ageis"></div>
                 <div class="swiper-slide"><img src="/Imagens/Tuning.svg" alt="Livro sobre Tuning"></div>
             </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
         <article class="card">
@@ -187,6 +190,10 @@
             pagination: {
                 el:'.swiper-pagination',
                 type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             spaceBetween: 20,
             slidesPerView: 3,
