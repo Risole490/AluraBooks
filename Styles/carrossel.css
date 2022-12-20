@@ -36,7 +36,7 @@
 }
 
 .descricao {
-    margin-right: 1em;
+    margin-right: 3.5em;
 }
 
 .descricao__titulo {
@@ -63,6 +63,8 @@
 
 .botoes {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .botoes__item {
@@ -83,8 +85,9 @@
     }
 
     .swiper {
-        width: 60%;
+        width: 80%;
         text-align: center;
+        padding: 0 0.5em;
     }
 
     .swiper-pagination {
@@ -96,16 +99,11 @@
     }
 
     .swiper-slide img{
-        width: 90%;
+        width: 70%;
     }
 
     .swiper-button-next, .swiper-button-prev {
-        position: fixed;
-        top: 44%;
         display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
         margin-top: 1em;
         width: 38px;
         height: 38px;
@@ -115,11 +113,12 @@
         font-weight: bold;
     }
 
-    .swiper-button-next {
-        right: 18%;
+    .card {
+        width: 50%;
+        margin: 2em auto;
     }
 
-    .swiper-button-prev {
-        left: 18%;
+    .botoes__item img{
+        width: 24px;
     }
 }
