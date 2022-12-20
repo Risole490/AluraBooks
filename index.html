@@ -36,11 +36,21 @@
             <h1 class="header__titulo"><b class="negrito-titulo">Alura</b>Books</h1>
         </div>
 
-        <nav class="navegacao__header">
-            <a href="#" class="nav__item">Categorias</a>
-            <a href="#" class="nav__item">Favoritos</a>
-            <a href="#" class="nav__item">Minha estante</a>
-        </nav>
+        <ul class="opcoes__header">
+            <input type="checkbox" id="menu-categorias" class="botao__categorias">
+            <label for="menu-categorias">
+                <li class="nav__item label__categorias">Categorias</li>
+            </label>
+                <ul class="lista-menu">
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-end</a></li>
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
+                </ul>
+            <li class="nav__item">Favoritos</li>
+            <li class="nav__item">Minha estante</li>
+            </ul>
 
         <div class="container">
             <a href="#"><img src="/Imagens/Heart.svg" alt="Meus Favoritos" class="container__img heart"></a>

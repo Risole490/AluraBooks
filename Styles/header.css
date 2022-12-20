@@ -64,11 +64,11 @@
 
 @media screen and (min-width: 1024px) {
 
-    .cabecalho__menu-hamburger, .heart {
+    .cabecalho__menu-hamburger, .heart, .botao__categorias {
         display: none;
     }
 
-    .navegacao__header {
+    .opcoes__header {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,6 +79,7 @@
         color: var(--preto);
         text-transform: uppercase;
         text-decoration: none;
+        cursor: pointer;
     }
 
     .img__logo {
@@ -98,5 +99,12 @@
 
     .perfil {
         margin: 0 3.2em 0 2.2em;
+    }
+
+    .botao__categorias:checked ~.lista-menu {
+        display: block;
+        width: 17%;
+        left: 34%;
+        top: 80%;
     }
 }
