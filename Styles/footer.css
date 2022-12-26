@@ -9,15 +9,16 @@ hr {
 
 @media screen and (min-width: 1024px) {
     .rodape {
-        padding: 4em 1.5em;
+        background-color: var(--cinza-rodape);
+        padding: 3.5em 3em 3.5em 1.5em;
         display: flex;
-        /* flex-flow: row nowrap; */
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 
     .rodape__titulo {
         font-size: 24px;
         font-weight: 400;
-        margin-right: 4em;
         padding-top: 0.3em;
     }
 
@@ -36,6 +37,7 @@ hr {
 
     .rodape__lista-item {
         display: flex;
+        column-gap: 0.5em;
         align-items: center;
     }
 
