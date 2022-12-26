@@ -14,7 +14,9 @@
     --fonte-secundaria: 'Josefin Sans';
     --azul: #002F52;
     --preto: #000000;
-    --swiper-navigation-size: 9px
+    --swiper-navigation-size: 9px;
+    --cinza: #858585;
+    --cinza-secundario: #474646;
 }
 
 body {
