@@ -7,6 +7,10 @@ hr {
     padding: 1em;
 }
 
+.rodape__lista {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .rodape {
         background-color: var(--cinza-rodape);
