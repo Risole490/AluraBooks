@@ -108,3 +108,41 @@
         top: 80%;
     }
 }
+
+@media screen and (min-width: 1728px) {
+
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcoes__header {
+        margin-right: 30em;
+    }
+
+    .perfil {
+        margin: 0;
+    }
+
+    .sacola-perfil {
+        margin-right: 3.5em;
+    }
+
+    .perfil_text, .sacola_text {
+        font-size: 20px;
+        font-family: var(--fonte-principal), sans-serif;
+    }
+
+    .sacola_text {
+        margin-right: 2em;
+    }
+
+    .sacola-perfil a{
+        display: flex;
+        align-items: center;
+    }
+}
