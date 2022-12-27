@@ -61,3 +61,19 @@
         text-align: center;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        justify-content: center;
+        padding: 3em 0;
+    }
+
+    .contato__texto {
+        width: 70%;
+    }
+
+    .container-contato {
+        width: auto;
+        margin: 1em 0;
+    }
+}
