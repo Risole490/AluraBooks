@@ -58,7 +58,7 @@
     display: none;
 }
 
-.header__titulo, .navegacao__header, .opcoes__header {
+.header__titulo, .navegacao__header, .opcoes__header, .sacola_text, .perfil_text {
     display: none;
 }
 
