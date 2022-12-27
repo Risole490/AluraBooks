@@ -21,7 +21,7 @@
 }
 
 .container__img {
-    padding: 1em;
+    padding: 1em 0.4em 1em 1em;
 }
 
 .lista-menu {
@@ -90,7 +90,7 @@
         font-family: var(--fonte-secundaria), sans-serif;
         display: block;
         font-size: 30px;
-        margin: 0.4em 0 0 -0.2em;
+        margin: 0.4em 0 0 0.4em;
     }
 
     .negrito-titulo {
@@ -113,6 +113,13 @@
 
     .cabecalho {
         justify-content: space-between;
+    }
+
+    .botao__categorias:checked ~ .lista-menu {
+        display: block;
+        left: 20%;
+        width: 10%;
+        top: 85%;
     }
 
     .container {
@@ -143,6 +150,5 @@
 
     .sacola-perfil a{
         display: flex;
-        align-items: center;
     }
 }
