@@ -122,3 +122,41 @@
         width: 24px;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .carrossel__titulo {
+        font-size: 32px;
+        padding: 1.8em 0 0.8em 0;
+    }
+
+    .carrossel, .carrossel__2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 8em;
+    }
+
+    .swiper {
+        width: 48%;
+    }
+
+    .swiper-wrapper {
+        margin: 1.8em 0 1em 0;
+    }
+
+    .swiper-pagination {
+        margin: auto;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        margin: 0;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+    }
+}
