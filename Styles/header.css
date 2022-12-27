@@ -1,6 +1,6 @@
 .cabecalho__menu-hamburger {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     background-image: url("/Imagens/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -20,8 +20,18 @@
     align-items: center;
 }
 
-.container__img {
-    padding: 1em 0.4em 1em 1em;
+.container__img-hamburger {
+    padding: 1.5em 1.5em;
+}
+
+.img__logo {
+    margin-left: 1em;
+}
+
+.sacola-perfil {
+    display: flex;
+    column-gap: 1em;
+    padding: 1em 1.2em;
 }
 
 .lista-menu {
@@ -54,12 +64,16 @@
     display: block;
 }
 
-.container__botao {
+.header__titulo, .navegacao__header, .opcoes__header, .sacola_text, .perfil_text, .container__botao {
     display: none;
 }
 
-.header__titulo, .navegacao__header, .opcoes__header, .sacola_text, .perfil_text {
-    display: none;
+.container__botao:checked ~ .container__label > .cabecalho__menu-hamburger {
+    background-image: url(/Imagens/Menu_Aberto.svg);
+}
+
+.container__botao:checked ~ .container__label {
+    background: var(--azul-degrade);
 }
 
 @media screen and (min-width: 1024px) {
@@ -75,11 +89,25 @@
         column-gap: 2em;
     }
 
+    .botao__categorias:checked ~ .opcoes__label > .label__categorias {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+    }
+
     .nav__item {
         color: var(--preto);
         text-transform: uppercase;
         text-decoration: none;
         cursor: pointer;
+        padding: 2em 1em;
     }
 
     .img__logo {
@@ -104,7 +132,7 @@
     .botao__categorias:checked ~.lista-menu {
         display: block;
         width: 17%;
-        left: 34%;
+        left: 30%;
         top: 80%;
     }
 }
@@ -117,9 +145,22 @@
 
     .botao__categorias:checked ~ .lista-menu {
         display: block;
-        left: 20%;
+        left: 16.3%;
         width: 10%;
         top: 85%;
+    }
+
+    .botao__categorias:checked ~ .opcoes__label > .label__categorias {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
     }
 
     .container {
