@@ -40,10 +40,26 @@
         display: flex;
         flex-wrap: wrap;
         row-gap: 2em;
-        margin-bottom: 1em;
+        column-gap: 0.5em;
     }
 
     .topicos__lista-link {
         font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .topicos {
+        padding: 2.5em 0 5em 0;
+    }
+
+    .topicos__titulo {
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    .topicos__lista {
+        width: 40%;
     }
 }
